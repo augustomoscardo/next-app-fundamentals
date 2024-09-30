@@ -22,6 +22,12 @@ async function getProduct(slug: string): Promise<Product> {
   return product
 }
 
+// Gerar URL para imagens que são carregadas na página do produto
+// Assim a imagem possui uma URL para acessar como um endereço no browser
+
+/* Para visualizar, ao carregar a página do produto procurar no inspecionador por "og-image" e na 
+chave "content" p/ ver a imagem gerada */
+
 export default async function OgImage({
   params,
 }: {
